@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="strict-origin" />
+    <title>Video review</title>
+    <link rel="icon" href="data:," />
+    <!-- The review page's policy (docs/design/review-share.md §10): its own files; YouTube's
+         privacy-enhanced player in a frame; Google Drive's API for the review's files (with the
+         page's browser key, or the reviewer's sign-in through its own media worker); and, for a
+         review shared with certain people, Google's sign-in (accounts.google.com) and Picker
+         (apis.google.com scripts, a docs.google.com frame). Inline styles for Google's own
+         dialogs. No other site. -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' https://accounts.google.com/gsi/client https://apis.google.com; style-src 'self' 'unsafe-inline' https://accounts.google.com/gsi/style; img-src 'self' data:; media-src 'self' https://www.googleapis.com; connect-src https://www.googleapis.com https://accounts.google.com/gsi/; frame-src https://www.youtube-nocookie.com https://accounts.google.com https://docs.google.com; worker-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <script type="module" crossorigin src="./assets/index-CW7Iiu98.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CFtcG-Nx.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
